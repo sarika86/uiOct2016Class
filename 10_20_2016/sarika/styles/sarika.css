@@ -1,0 +1,171 @@
+body{
+    background: #5690f6;
+    }
+
+form[name="newLicenseForm"]{
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    }
+
+div{
+    margin: 20px 20px;
+    display: inline-block;
+    }
+
+label{
+    display: block;
+    padding: 10px 0;
+    }
+
+ul{
+    list-style-type: none;
+    }
+
+li{
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+   }
+
+
+
+button{
+    border: 1px solid #5e5e5e;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+button[type="submit"]{
+    background: #86B0F9;
+    }
+
+button[type="submit"]:hover{
+    background:#e7de18;
+    border: 2px solid #4a6dab;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+button[type="reset"]{
+    background: #f71814;
+    }
+
+button[type="reset"]:hover{
+    background:#83eb9f;
+    border: 1px solid #4a6dab;
+    border-radius: 5px;
+    cursor: pointer;
+      }
+
+input{
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    }
+
+input:focus{
+    border: 2px solid #ooo;
+    background: #ooo;
+    color: #fff;
+    }
+
+#main-section{
+    position: relative;
+    top: 95px;
+    background: #c7dafc;
+    }
+
+#nav-heading {
+    position: fixed;
+    top: 100px;
+    width: 1570px;
+    height: 40px;
+    }
+
+#nav-heading nav{
+    width:  600px;
+    margin: 0 auto;
+    }
+
+form[name="newLicenseForm"] > div {
+    position: relative;
+    }
+
+input[name="fName"] + label,
+input[name="lName"] + label,
+input[name="phoneNumber"] ~ label{
+    position: absolute;
+    top: -4px;
+    left: 5px;
+    }
+input[name="fName"]:focus + label,
+input[name="lName"]:focus + label,
+input[name="phoneNumber"]:focus ~ label{
+    top: -35px;
+    }
+
+#main-heading  {
+   position: fixed;
+   width: 1570px;
+   height: 100px;
+   top: 5px;
+   color: #fff;
+   background: #003366;
+}
+
+#main-heading nav{
+    width:  1570px;
+    margin: 0 auto;
+    }
+
+li a{
+    color: #fff;
+    }
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited{
+    text-decoration: none;
+    }
+
+a:hover{
+    color: #fb47f1;
+    text-decoration: underline;
+    }
+
+a:active{
+    color: #721e21;
+    text-decoration: underline;
+    }
+
+#main-footer nav {
+    position: fixed;
+    width: 1570px;
+    height: 50px;
+    bottom: 5px;
+    color: #fff;
+    background: #003366;
+    }
+
+
+#main-heading li{
+    display: inline-block;
+    margin: 0 80px;
+    text-align: center;
+    }
+
+#main-footer li{
+      display: inline-block;
+      margin: 0 80px;
+      text-align: center;
+      padding: 20px 20px;
+    }

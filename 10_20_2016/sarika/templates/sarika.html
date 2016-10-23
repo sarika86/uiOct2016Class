@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--head of the web page-->
+    <head>
+        <!--title - this is the title of this html file-->
+        <title>DMV New License Form</title>
+
+        <!--this is external style-->
+        <link href="../styles/sarika.css" rel="stylesheet"/>
+    </head>
+
+    <!--body of the web page-->
+
+    <body>
+
+        <!--main article for forms-->
+        <article>
+
+            <!--page header-->
+            <header id="main-heading">
+                <h1>Welcome to my website!</h1>
+                <nav>
+                    <ui>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmv/home">About DMV</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmv/offices.gif">Offices</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmv/onlinesvcs">Online Services</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmv/dl">Driver License</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmv/vr">Vehicle Registration</a>
+                        </li>
+                    </ui>
+                </nav>
+            </header>
+
+            <!--main body of the page-->
+            <section id="main-section">
+                <article>
+                    <header id="nav-heading">
+                        <!--page naviagation-->
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="https://www.google.com/maps">Maps</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/mail">Mail</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/images">Images</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/shopping">Shopping</a>
+                                </li>
+                                 <li>
+                                    <a href="srikar.html">Open Srikar</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </header>
+                    <section>
+                        <!--form for new license in dmv-->
+                        <form name="newLicenseForm">
+                            <!--First Name-->
+                            <div>
+                                <input type="text" id="firstName" name="fName"/>
+                                <label for="firstName">Enter your First Name</label>
+
+                            </div>
+                            <br />
+
+                            <!--Last Name-->
+                            <div>
+
+                                <input type="text" id="lastName" name="lName"/>
+                                <label for="lastName">Enter your Last Name</label>
+                            </div>
+                            <br />
+
+                            <!--Phone Number-->
+                            <div>
+
+                                <input type="text" id="phoneNumber" name="phoneNumber" />
+                                <label for="phoneNumber">Enter your Phone Number</label>
+                            </div>
+                            <br />
+
+                            <!--Gender-->
+                            <div>
+                                <label for="gender">Applicant's Gender:</label>
+                                <div id="gender">
+                                    <!--male-->
+                                    <label for="male">Male:</label>
+                                    <input type="radio" id="male" name="gender" value="Male"/>
+
+
+                                    <!--female-->
+                                    <label for="female">Female:</label>
+                                    <input type="radio" id="female" name="gender" value="Female"/>
+
+                                </div>
+                            </div>
+                            <br/>
+
+                            <!--senior citizen-->
+                             <div>
+                                 <label for="seniorCitizen">Is applicant a senior citizen?</label>
+                                 <input type="checkbox" id="seniorCitizen" name="seniorCitizen" data-srikar="viswa"/>
+                            </div>
+
+                            <!--submit button-->
+                            <button type="submit" id="submit">
+                                <span>Submit</span>
+                            </button>
+                            <!--reset/cancel-->
+                            <button type="reset" id="reset">
+                                <span>Cancel</span>
+                            </button>
+                        </form>
+
+                    </section>
+                    <footer></footer>
+                </article>
+            </section>
+            <!--footer of the page-->
+            <footer id="main-footer">
+                <nav>
+                    <u1>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmvfooter2/accessibility">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmvfooter2/contactus">Contact DMV</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmvfooter1/footerhelp">Help</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmvfooter2/privacypolicy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dmv.ca.gov/portal/dmv/dmvfooter1/technicalsupport">Technical Support</a>
+                        </li>
+                    </u1>
+                </nav>
+            </footer>
+        </article>
+    </body>
+</html>
