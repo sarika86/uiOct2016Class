@@ -1,0 +1,253 @@
+body{
+    background: url('../../beautifuldiwali.jpg');
+    background-repeat: no-repeat;
+    background-size: 1600px 800px;
+}
+
+#main-heading{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0px;
+    opacity: 1;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    background: url('../../rangoli.jpg');
+}
+
+#main-heading:hover{
+    opacity: 0.5;
+    font-size: 23px;
+}
+
+#nav-heading{
+    position: fixed;
+    background-color: #f64b1f;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    height: 38px;
+    top: 66px;
+    color: #fff;
+    z-index: 999;
+}
+
+#nav-heading > nav{
+    left: 5%;
+    position: relative;
+}
+
+#nav-heading > nav > ul,
+#main-footer > nav > ul{
+    list-type: none;
+    text-decoration: none;
+}
+
+#nav-heading > nav > ul li,
+#main-footer > nav > ul li{
+    display: inline-block;
+    padding: 0px 35px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#nav-heading > nav > ul li:hover,
+#main-footer > nav > ul li:hover{
+    background-color: #f7f7f4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nav-heading > nav > ul li a,
+#main-footer > nav > ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav-heading > nav > ul li:hover > a,
+#main-footer > nav > ul li:hover > a{
+    color: #5690f6;
+    text-decoration: underline;
+}
+
+#nav-heading + section{
+    position: absolute;
+    left: 4%;
+    top: 15%;
+}
+
+#nav-heading1 + section {
+    position: absolute;
+    border: 2px solid #5690f6;
+    top: 17%;
+    left: 28%;
+}
+
+#nav-heading2 + section {
+    position: absolute;
+    bottom: 20%;
+    left: 43%;
+    width: 23%;
+    font-size: 70px;
+    text-align: center;
+    color: #2021d1;
+    font-style: oblique;
+}
+
+#nav-heading + section > form[name="DiwaliDhamaka"]{
+    border: 2px solid #5690f6;
+    padding:  35px;
+    position: relative;
+}
+
+form[name="DiwaliDhamaka"] > h4{
+    position: absolute;
+    top: -23px;
+    left: 15px;
+    background-color: #f79b53;
+    padding: 0 15px;
+}
+
+form[name="DiwaliDhamaka"],
+.animationQuotes{
+    background-color: #f79b53;
+}
+
+form[name="DiwaliDhamaka"]:hover {
+    background-color: #fff;
+}
+
+form[name="DiwaliDhamaka"]:hover > h4 {
+    background-color: #fff;
+}
+
+#main-footer{
+    position: fixed;
+    background-color: #f64b1f;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    bottom: 0;
+}
+
+#main-footer > nav{
+    left: 14%;
+    position: relative;
+    top: -8px;
+}
+
+form[name="DiwaliDhamaka"] div{
+    position: relative;
+    padding: 20px 0;
+}
+
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]:hover,
+input[type="email"],
+input[type="email"]:focus,
+input[type="email"]:hover{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccccb9;
+    outline: none;
+    width: 220px;
+    padding: 0 5px;
+}
+
+input + label{
+    position: absolute;
+    top: 27px;
+    left: 5px;
+    cursor: auto;
+    transition: all 0.3s linear;
+    color: #ccccb9;
+}
+
+input:focus + label,
+input:valid + label{
+    top: 0;
+    font-size:13px;
+    color: #000;
+}
+
+input[id="male"] + label{
+    position: relative;
+    top: 0;
+}
+
+#gender{
+    border: none;
+    padding: 0;
+}
+
+#requiredEmail{
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    color: #ff0000;
+}
+
+#invalidEmail{
+    position: absolute;
+    bottom: -15px;
+    left: 5px;
+    color: #ff0000;
+}
+
+input[type="email"]:valid,
+input[type="email"]:valid{
+    border: 1px solid #00ff00;
+}
+
+input[type="email"]:invalid,
+input[type="email"]:invalid{
+    border: 1px solid #ff0000;
+}
+
+input[type="email"]:valid ~ #requiredEmail,
+input[type="email"]:valid ~ #invalidEmail{
+    display: none;
+}
+
+input[type="email"]:invalid ~ #requiredEmail,
+input[type="email"]:invalid ~ #invalidEmail{
+    display: inline-block;
+}
+
+
+input[type="email"]:invalid + label{
+    top: 0;
+    color: #000;
+    font-size: 13px;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccccb9;
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    background-color: #c4d7ff;
+}
+
+button[type="submit"]:hover{
+    background-color: #fbdf6b;
+}
+
+button[type="reset"]{
+    background-color: #fc1c29;
+}
+
+button[type="reset"]:hover{
+    background-color: #6dfc4f;
+}
+
+
+
+

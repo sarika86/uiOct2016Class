@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!--head of the web page-->
+    <head>
+        <!--title - this is the title of this html file-->
+        <title>DiwaliFestival</title>
+
+        <!--this is external style-->
+        <link href="../styles/sarika.css" rel="stylesheet"/>
+        <link href="../styles/animation.css" rel="stylesheet"/>
+    </head>
+
+    <!--body of the web page-->
+
+    <body>
+
+        <!--main article for forms-->
+        <article>
+
+            <!--page header-->
+            <header id="main-heading">
+                <h1>Diwali-Indian Festival of Lights</h1>
+            </header>
+
+            <!--main body of the page-->
+            <section id="main-section">
+                <article>
+                    <header id="nav-heading">
+                        <!--page naviagation-->
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="http://www.diwalifestival.org">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.diwalifestival.org/diwali-in-history.html">DIWALI HISTORY</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.diwalifestival.org/diwali-traditions-customs.html">TRADITIONS & CUSTOMS</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.diwalifestival.org/diwali-meaning-significance.html">MEANING & SIGNIFICANCE</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.diwalifestival.org/diwali-celebrations.html">CELEBRATIONS</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.diwalifestival.org/regional-significance.html">REGIONAL SIGNIFICANCE</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <section>
+                        <!--form for new license in dmv-->
+                        <form name="DiwaliDhamaka">
+                            <h4>Diwali Dhamaka Events</h4>
+                            <!--First Name-->
+                            <div>
+                                <input type="text" id="firstName" name="fName" required/>
+                                <label for="firstName">Enter your First Name</label>
+                            </div>
+
+
+                            <!--Last Name-->
+                            <div>
+                                <input type="text" id="lastName" name="lName" required/>
+                                <label for="lastName">Enter your Last Name</label>
+                            </div>
+
+
+                            <!--email-->
+                            <div>
+                                <input type="email" id="email" name="email" required/>
+                                <label for="email">Enter your Email</label>
+
+                                <!--for validation-->
+                                <label for="email" id="requiredEmail">Email is required</label>
+                                <label for="email" id="invalidEmail">Invalid Email added</label>
+                            </div>
+
+                            <br/>
+                            <!--Phone Number-->
+                            <div>
+                                <input type="text" id="phoneNumber" name="phoneNumber" required/>
+                                <label for="phoneNumber">Enter your Phone Number</label>
+                            </div>
+
+                            <!--Gender-->
+                            <div>
+                                <label for="gender">Applicant's Gender:</label>
+                                <fieldset id="gender">
+                                    <!--male-->
+                                    <label for="male">Male:</label>
+                                    <input type="radio" id="male" name="gender" value="Male"/>
+
+                                    <!--female-->
+                                    <label for="female">Female:</label>
+                                    <input type="radio" id="female" name="gender" value="Female"/>
+                                </fieldset>
+                            </div>
+
+                            <!--Dance School Name-->
+                            <div>
+                                <input type="text" id="danceName" name="dName" required/>
+                                <label for="danceName">Dance School Name</label>
+                            </div>
+
+                            <!--Type Performance-->
+                            <div>
+                                <label for="email">Type of Performance:</label>
+                            <br />
+                                <select name="Dance" style="width: 230px;">
+                                    <option value="volvo">Folk</option>
+                                    <option value="saab">Bollywood</option>
+                                    <option value="fiat">Semi-Classical</option>
+                                    <option value="audi">Western</option>
+                                </select>
+                            </div>
+
+                            <!--submit button-->
+                            <button type="submit" id="submit">
+                                <span>Submit</span>
+                            </button>
+                            <!--reset/cancel-->
+                            <button type="reset" id="reset">
+                                <span>Cancel</span>
+                            </button>
+                        </form>
+
+                    </section>
+                    <footer></footer>
+                 </article>
+                <article>
+                    <header id="nav-heading1">
+                    </header>
+                    <section class="animationQuotes">
+                       <h5>Light a lamp of love! Blast a chain of sorrow! Shoot a rocket of prosperity! Fire a flowerpot of happiness Wish u and your family "SPARKLING DIWALI"
+                       </h5>
+                    </section>
+                    <footer></footer>
+                </article>
+                <article>
+                    <header id="nav-heading2"></header>
+                    <section class="transformed">
+                        <h6>Happy Diwali</h6>
+                    </section>
+                    <footer></footer>
+                </article>
+            </section>
+            <!--footer of the page-->
+            <footer id="main-footer" >
+                <!--footer navigation-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="http://www.diwalifestival.org">Homes</a>
+                        </li>
+                        <li>
+                            <a href="http://www.diwalifestival.org/scfi.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="http://www.diwalifestival.org/query.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="http://diwali.indiangiftsportal.com">Upcoming Occasions</a>
+                        </li>
+                        <li>
+                            <a href="http://www.diwalifestival.org/query.html">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="http://www.diwalifestival.org/sitemap.html">Sitemap</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </article>
+    </body>
+</html>

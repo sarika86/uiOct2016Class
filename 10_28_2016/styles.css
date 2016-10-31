@@ -300,6 +300,7 @@ input[type="email"]:invalid + label{
 }
 
 #main-heading{
+
     position: absolute;
     /*left: 25%;
     top: 50%;
