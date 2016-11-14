@@ -2,6 +2,17 @@ body{
     background: #5690f6;
     }
 
+.homebtn{
+    background: url(../../img_navsprites.gif);
+    width: 48px;
+    height: 42px;
+    top: -13px;
+    background-position: 1px -1px;
+    position: relative;
+    left: 35px;
+}
+
+
 form[name="newLicenseForm"]{
     display: block;
     width: 250px;
@@ -163,7 +174,7 @@ a:active{
 
 #main-heading li{
     display: inline-block;
-    margin: 0 80px;
+    margin: -9px 80px;
     text-align: center;
     }
 

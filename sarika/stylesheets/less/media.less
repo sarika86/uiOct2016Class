@@ -1,0 +1,7 @@
+.make-grid(@contains-width){
+    @media(min-width: @contains-width){
+    width: @contains-width;
+    .generate-columns( @contains-width,@grid-columns);
+    }
+}
+

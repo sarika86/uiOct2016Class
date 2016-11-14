@@ -116,7 +116,8 @@ form[name="DiwaliDhamaka"],
     background-color: #f79b53;
 }
 
-form[name="DiwaliDhamaka"]:hover {
+form[name="DiwaliDhamaka"]:hover,
+form[name="DiwaliDhamaka"]:focus{
     background-color: #fff;
 }
 

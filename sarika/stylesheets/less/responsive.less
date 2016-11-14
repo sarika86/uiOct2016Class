@@ -1,0 +1,16 @@
+.contains-fixed(@gutter: @grid-gutter-width){
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: (@gutter / 2);
+    padding-right: (@gutter / 2);
+
+}
+
+.generate-columns(@contains-width;@number-columns; @i:1) when(@i =< @number-columns){
+    .column-@{i} {
+    @single-width: @contains-width/@number-columns;
+    width: @i * @single-width;
+}
+    .generate-columns(@contains-width; @number-columns; @i + 1);
+}
+

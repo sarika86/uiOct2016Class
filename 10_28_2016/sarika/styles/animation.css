@@ -8,13 +8,13 @@
 
 @keyframes upAndDown{
     0%,100% {
-        opacity: 0;
+        z-index: 1;
         top: 17%;
         left: 28%;
         font-size: 14px;
     }
     50% {
-        opacity: 1;
+        z-index: 999;
         top: 50%;
         left: 0;
         font-size: 50px;
@@ -35,5 +35,23 @@
     -o-transform: matrix(1, -0.3, 0, 1, 0, 0);
     -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
     transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+@keyframes scrollContent{
+    0%{
+        right: -50%;
+    }
+    100% {
+        right: 50%;
+    }
+}
+
+.scroll-content{
+    position: relative;
+    -webkit-animation: scrollContent 20s infinite;
+    -moz-animation: scrollContent 20s infinite;
+    -o-animation: scrollContent 20s infinite;
+    -ms-animation: scrollContent 20s infinite;
+    animation: scrollContent 20s infinite;
 }
 
