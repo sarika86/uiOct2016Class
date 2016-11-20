@@ -1,243 +1,306 @@
 /* constant variable */
+@media only screen and (min-width: 1200) {
+  .column-lg-1 {
+    width: 8.33333333%;
+  }
+  .column-lg-2 {
+    width: 16.66666667%;
+  }
+  .column-lg-3 {
+    width: 25%;
+  }
+  .column-lg-4 {
+    width: 33.33333333%;
+  }
+  .column-lg-5 {
+    width: 41.66666667%;
+  }
+  .column-lg-6 {
+    width: 50%;
+  }
+  .column-lg-7 {
+    width: 58.33333333%;
+  }
+  .column-lg-8 {
+    width: 66.66666667%;
+  }
+  .column-lg-9 {
+    width: 75%;
+  }
+  .column-lg-10 {
+    width: 83.33333333%;
+  }
+  .column-lg-11 {
+    width: 91.66666667%;
+  }
+  .column-lg-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .column-md-1 {
+    width: 8.33333333%;
+  }
+  .column-md-2 {
+    width: 16.66666667%;
+  }
+  .column-md-3 {
+    width: 25%;
+  }
+  .column-md-4 {
+    width: 33.33333333%;
+  }
+  .column-md-5 {
+    width: 41.66666667%;
+  }
+  .column-md-6 {
+    width: 50%;
+  }
+  .column-md-7 {
+    width: 58.33333333%;
+  }
+  .column-md-8 {
+    width: 66.66666667%;
+  }
+  .column-md-9 {
+    width: 75%;
+  }
+  .column-md-10 {
+    width: 83.33333333%;
+  }
+  .column-md-11 {
+    width: 91.66666667%;
+  }
+  .column-md-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .column-sm-1 {
+    width: 8.33333333%;
+  }
+  .column-sm-2 {
+    width: 16.66666667%;
+  }
+  .column-sm-3 {
+    width: 25%;
+  }
+  .column-sm-4 {
+    width: 33.33333333%;
+  }
+  .column-sm-5 {
+    width: 41.66666667%;
+  }
+  .column-sm-6 {
+    width: 50%;
+  }
+  .column-sm-7 {
+    width: 58.33333333%;
+  }
+  .column-sm-8 {
+    width: 66.66666667%;
+  }
+  .column-sm-9 {
+    width: 75%;
+  }
+  .column-sm-10 {
+    width: 83.33333333%;
+  }
+  .column-sm-11 {
+    width: 91.66666667%;
+  }
+  .column-sm-12 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .column-xs-1 {
+    width: 8.33333333%;
+  }
+  .column-xs-2 {
+    width: 16.66666667%;
+  }
+  .column-xs-3 {
+    width: 25%;
+  }
+  .column-xs-4 {
+    width: 33.33333333%;
+  }
+  .column-xs-5 {
+    width: 41.66666667%;
+  }
+  .column-xs-6 {
+    width: 50%;
+  }
+  .column-xs-7 {
+    width: 58.33333333%;
+  }
+  .column-xs-8 {
+    width: 66.66666667%;
+  }
+  .column-xs-9 {
+    width: 75%;
+  }
+  .column-xs-10 {
+    width: 83.33333333%;
+  }
+  .column-xs-11 {
+    width: 91.66666667%;
+  }
+  .column-xs-12 {
+    width: 100%;
+  }
+}
 * {
   box-sizing: border-box;
 }
-body {
-  background-color: #90acfa;
-  font-size: 25px;
-}
-.header1 {
-  width: 100%;
-  top: -40px;
+.rows {
   position: relative;
-  left: 41%;
-}
-.rows::after {
-  content: "";
-  clear: both;
+  left: 0%;
+  margin-top: -16px;
+  margin-left: -10px;
+  margin-right: -12px;
+  background-color: #afc4db;
   display: block;
 }
-.contains {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+.rows .img1 .img-responsive {
+  margin: -31px;
 }
-@media (min-width: 540px) {
-  .contains {
-    width: 540px;
-  }
-  .contains .column-1 {
-    width: 45px;
-  }
-  .contains .column-2 {
-    width: 90px;
-  }
-  .contains .column-3 {
-    width: 135px;
-  }
-  .contains .column-4 {
-    width: 180px;
-  }
-  .contains .column-5 {
-    width: 225px;
-  }
-  .contains .column-6 {
-    width: 270px;
-  }
-  .contains .column-7 {
-    width: 315px;
-  }
-  .contains .column-8 {
-    width: 360px;
-  }
-  .contains .column-9 {
-    width: 405px;
-  }
-  .contains .column-10 {
-    width: 450px;
-  }
-  .contains .column-11 {
-    width: 495px;
-  }
-  .contains .column-12 {
-    width: 540px;
-  }
+.rows .nav1 {
+  position: absolute;
+  top: -12%;
+  right: 13%;
 }
-@media (min-width: 780px) {
-  .contains {
-    width: 780px;
-  }
-  .contains .column-1 {
-    width: 65px;
-  }
-  .contains .column-2 {
-    width: 130px;
-  }
-  .contains .column-3 {
-    width: 195px;
-  }
-  .contains .column-4 {
-    width: 260px;
-  }
-  .contains .column-5 {
-    width: 325px;
-  }
-  .contains .column-6 {
-    width: 390px;
-  }
-  .contains .column-7 {
-    width: 455px;
-  }
-  .contains .column-8 {
-    width: 520px;
-  }
-  .contains .column-9 {
-    width: 585px;
-  }
-  .contains .column-10 {
-    width: 650px;
-  }
-  .contains .column-11 {
-    width: 715px;
-  }
-  .contains .column-12 {
-    width: 780px;
-  }
+.rows .nav1 ul {
+  list-style: none;
+  position: relative;
+  left: 63%;
 }
-@media (min-width: 1000px) {
-  .contains {
-    width: 1000px;
-  }
-  .contains .column-1 {
-    width: 83.33333333px;
-  }
-  .contains .column-2 {
-    width: 166.66666667px;
-  }
-  .contains .column-3 {
-    width: 250px;
-  }
-  .contains .column-4 {
-    width: 333.33333333px;
-  }
-  .contains .column-5 {
-    width: 416.66666667px;
-  }
-  .contains .column-6 {
-    width: 500px;
-  }
-  .contains .column-7 {
-    width: 583.33333333px;
-  }
-  .contains .column-8 {
-    width: 666.66666667px;
-  }
-  .contains .column-9 {
-    width: 750px;
-  }
-  .contains .column-10 {
-    width: 833.33333333px;
-  }
-  .contains .column-11 {
-    width: 916.66666667px;
-  }
-  .contains .column-12 {
-    width: 1000px;
-  }
+.rows .nav1 ul li {
+  display: inline-block;
+  padding: 8px 7px;
+  color: #000;
 }
-@media (min-width: 1200px) {
-  .contains {
-    width: 1200px;
-  }
-  .contains .column-1 {
-    width: 100px;
-  }
-  .contains .column-2 {
-    width: 200px;
-  }
-  .contains .column-3 {
-    width: 300px;
-  }
-  .contains .column-4 {
-    width: 400px;
-  }
-  .contains .column-5 {
-    width: 500px;
-  }
-  .contains .column-6 {
-    width: 600px;
-  }
-  .contains .column-7 {
-    width: 700px;
-  }
-  .contains .column-8 {
-    width: 800px;
-  }
-  .contains .column-9 {
-    width: 900px;
-  }
-  .contains .column-10 {
-    width: 1000px;
-  }
-  .contains .column-11 {
-    width: 1100px;
-  }
-  .contains .column-12 {
-    width: 1200px;
-  }
-}
-[class*='column-'] {
-  float: left;
-  width: 100%;
-}
-button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 1px solid #ccccb9;
+.rows .nav1 ul li:hover a {
+  text-decoration: underline;
   cursor: pointer;
-  margin: 0 auto;
-  text-align: center;
+  color: white;
 }
-button[type="submit"] {
-  background-color: #c4d7ff;
+.rows1 {
+  margin-right: 2px;
+  margin-top: -12px;
 }
-button[type="reset"] {
-  background-color: #fc1c29;
+.rows1 .test {
+  width: 100%;
 }
-.div1 {
-  position: relative;
-  display: block;
-  left: -8%;
-  padding: 0 25px;
-}
-.breadcrumb {
-  padding: 8px 15px;
-  margin-bottom: 20px;
+.rows1 .test .breadcrumb {
+  padding: 5px 15px;
   list-style: none;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
-.breadcrumb::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-o1 {
-  margin-top: 0;
-}
-.breadcrumb > li {
+.rows1 .test .breadcrumb li {
   display: inline-block;
+  padding: 1px 5px;
+  cursor: pointer;
 }
-a {
-  color: #337ab7;
+.rows1 .test .breadcrumb > .a1 a {
   text-decoration: none;
+  color: #337ab7;
 }
-.header2 {
-  position: relative;
-  top: -110px;
-  left: -31px;
-}
-ol li:hover > a {
+.rows1 .test .breadcrumb > .a1:hover a {
   text-decoration: underline;
+  color: #eb590b;
+  cursor: pointer;
+}
+.rows1 .test .breadcrumb > .active {
+  color: #777;
+}
+.rows2 {
+  text-align: center;
+  margin: auto;
+  width: 39%;
+  height: 300px;
+  background-color: #7895ca;
+  border: 5px solid black;
+}
+.rows2 .form-login[name="loginform"] {
+  position: relative;
+  margin: 2px;
+  left: 1%;
+  top: 17%;
+  text-align: center;
+}
+.rows2 .form-login[name="loginform"] .button-signin {
+  height: 28px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 transparent;
+  padding: 5px 10px;
+  text-align: center;
+  border: 1px solid #6cc644;
+  background-color: #6cc644;
+  color: #fff;
+}
+.rows2 .form-login[name="loginform"] .button-signin:hover {
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #000;
+}
+.rows2 .form-login[name="loginform"] .button-cancel {
+  height: 28px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 transparent;
+  padding: 5px 10px;
+  text-align: center;
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+  color: #fff;
+}
+.rows2 .form-login[name="loginform"] .button-cancel:hover {
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #000;
+}
+.rows3 {
+  background-color: #afc4db;
+  width: 156%;
+  margin: 125px -12px;
+  position: fixed;
+}
+.rows3 .nav2 {
+  position: relative;
+  /* margin: 15px; */
+  left: -20%;
+  top: 17%;
+  text-align: center;
+}
+.rows3 .nav2 ul {
+  list-style: none;
+  /* position: relative; */
+  /* left: 1%; */
+}
+.rows3 .nav2 ul li {
+  display: inline-block;
+  padding: 2px 11px;
+  color: #000;
+}
+.rows3 .nav2 ul li:hover a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+.rows4 {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  height: 311px;
+  background-color: #7895ca;
+  border: 5px solid black;
+}
+.rows4 .form-login[name="detailsform"] {
+  width: 62%;
+  margin: 42px auto;
+  text-align: center;
 }
