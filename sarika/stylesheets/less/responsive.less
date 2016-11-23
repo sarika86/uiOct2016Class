@@ -1,4 +1,4 @@
-.generate-columns(@column-size;@contains-width) when(@column-size =< 12){
+.generate-columns(@column-size;@contains-width) when(@column-size <=12){
     .column-@{contains-width}-@{column-size} {
         width: 100% / (12/@column-size);
     }
