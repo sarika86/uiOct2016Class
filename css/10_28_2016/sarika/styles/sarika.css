@@ -154,7 +154,7 @@ input[type="email"]:hover{
     height: 30px;
     border-radius: 5px;
     border: 1px solid #ccccb9;
-    outline: none;
+
     width: 220px;
     padding: 0 5px;
 }
