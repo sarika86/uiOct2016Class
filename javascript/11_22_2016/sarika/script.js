@@ -20,9 +20,30 @@ var y = null;
 // 5. undefined primitive type
 var x = undefined;
 
+// 6. Objects
+
+var person = {
+    gender : 'Female',
+    dob  :   24,
+    eyeColor  : 'black',
+    country: {
+
+        state: 'Calfornia',
+        street: 124,
+        city: 'Santa clara',
+        passport: {
+            placeofIssue: 'Hyderabad',
+            passportNumber: 567789
+        }
+    }
+};
+
 console.log(b);
 console.log(lastName);
 console.log(loggedOut);
 console.log(y);
 console.log(x);
+console.log(person);
+console.log(person.country.state);
+console.log(person.country.passport.passportNumber);
 
