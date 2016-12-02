@@ -18,32 +18,34 @@ var y = null;
 
 
 // 5. undefined primitive type
-var x = undefined;
+var w = undefined;
 
 // 6. Objects
 
-var person = {
-    gender : 'Female',
+var x = {
     dob  :   24,
     eyeColor  : 'black',
-    country: {
-
-        state: 'Calfornia',
-        street: 124,
+    gender : 'Female',
+    y: {
         city: 'Santa clara',
-        passport: {
-            placeofIssue: 'Hyderabad',
-            passportNumber: 567789
+        state: 'California',
+        street: 124,
+        z: {
+            passportNumber: 567789,
+            placeOfIssue: 'Hyderabad'
         }
     }
 };
+
+x.eyeColor='blue';
+x.y.city='Sunnyvale';
+x.y.z.passportNumber= 988888;
 
 console.log(b);
 console.log(lastName);
 console.log(loggedOut);
 console.log(y);
+console.log(w);
 console.log(x);
-console.log(person);
-console.log(person.country.state);
-console.log(person.country.passport.passportNumber);
+
 
