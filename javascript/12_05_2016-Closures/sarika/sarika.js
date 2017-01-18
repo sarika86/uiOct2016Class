@@ -1,5 +1,5 @@
 (function(){
-    function total(){
+    function Total(){
         var self = this;
         self.addition = 0;
         self.substract = 0;
@@ -19,6 +19,6 @@
         self.dividend = calculation.division;
 
     }
-    var output = new total();
+    var output = new Total();
     console.log(output);
 })();

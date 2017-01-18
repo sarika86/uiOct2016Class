@@ -67,7 +67,7 @@ These are used to avoid memory leaks from global variables.
     })();
     
 *** always have IIFE construct in your JS. even if its only one line, write it inside the IIFE construct.
-*** always have ONLY ONE IIFE construct per js file.    
+*** always have ONLY ONE IIFE construct per js file. IT is useful to write all local
   
 
 

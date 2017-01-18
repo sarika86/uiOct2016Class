@@ -1,5 +1,5 @@
 (function(){
-    function total(){
+    function Total(){
         var self = this;
         self.addition = 0;
         self.substract = 0;
@@ -7,26 +7,26 @@
         self.dividend = 0;
         function Mathematics(a,b){
             var _math = this;
-            _math.sum = function(a,b){
+            _math.sum = function(){
                 return (a + b);
             }
-            _math.difference = function(a,b){
+            _math.difference = function(){
                 return (a - b);
             }
-            _math.multiplication = function(a,b){
+            _math.multiplication = function(){
                 return (a * b);
             }
-            _math.division = function(a,b){
+            _math.division = function(){
                 return (a / b);
             }
         }
-        var calculation = new Mathematics();
-        self.addition = calculation.sum(55,45);
-        self.substract = calculation.difference(55,45);
-        self.product = calculation.multiplication(55,45);
-        self.dividend = calculation.division(55,45);
+        var calculation = new Mathematics(55,45);
+        self.addition = calculation.sum();
+        self.substract = calculation.difference();
+        self.product = calculation.multiplication();
+        self.dividend = calculation.division();
 
     }
-    var output = new total();
+    var output = new Total();
     console.log(output);
 })();
