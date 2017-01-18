@@ -2,17 +2,31 @@
 (function(angular){
   'use strict';
 
-  function ProjectController($rootScope,$scope,UserFactory,LoginService){
-    $scope.init = function(){
-      // create a clone/duplicate of the user in the factory.
-      $scope.user = angular.copy(UserFactory.user);
-      console.log($scope.user);
+  function ProjectController($rootScope,UserFactory,LoginService,URLFactory,APIService){
+    var vm = this;
 
-      LoginService.checkLogin($scope);
+    vm.init = function(){
+      // create a clone/duplicate of the user in the factory.
+      vm.user = angular.copy(LoginService.returnUser());
+
+      //vm.classRooms = angular.copy(UserFactory.classRooms);
+      vm.posts = [];
+      APIService.get(URLFactory.albums,'array').then(function(data){
+        vm.posts = angular.copy(data);
+      });
+
+      LoginService.checkLogin(vm);
     };
-    $scope.init();
+    vm.init();
+
+    // logic to be executed when user clicks on submit button
+    vm.submitRequest = function(){
+      APIService.post(URLFactory.posts,vm.posts).then(function(data){
+        console.log(data);
+      });
+    };
   }
-  ProjectController.$inject = ['$rootScope','$scope','UserFactory','LoginService'];
+  ProjectController.$inject = ['$rootScope','UserFactory','LoginService','URLFactory','APIService'];
 
   // call the module from app.js file
   angular.module('projectApp.controllers').controller('ProjectController',ProjectController);
